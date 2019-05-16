@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Александр](https://up.htmlacademy.ru/htmlcss/25/user/1010209).
-* Наставник: [ДанилЧушко](https://github.com/terluk) .
+* Наставник: [Данил Чушко](https://github.com/flatdesign) .
 
 ---
 
