@@ -7,25 +7,42 @@
   <body>
     <header class="main-header">
       <a class="main-header-logo">
-        <img src="#" width="#" height="#" alt="Логотип Техномарта"></a>
+        <img src="img/invalid-name.png" width="109" height="19" alt=
+        "Логотип Техномарта"></a>
      <div class="main-header-button">
-      <a href="#">Поиск</a>
-      <a href="#">Закладки</a>
-      <a href="#">Корзина</a>
-      <a class="main-header-formalize" href="#">Оформить заказ</a>
+       <form action="">
+          <button type="submit"></button>
+          <input type="button" placeholder="Поиск">
+       </form>
+        <a href="#">Закладки: 0</a>
+        <!-- убрать label, оставить только ссылки -->
+      <label>
+        <a href="#"></a>
+        <input type="button" value="Корзина">
+      </label>
+      <label> 
+        <a class="main-header-formalize" href="#"></a>
+        <input type="button" value="Оформить заказ">
      </div>
-      <h1>
+        <h1>
         Интернет-магазин
         строительных материалов
         и инструментов для ремонта
-      </h1>
-      <a class="header-telefon" href="#">+7(812)555-05-55</a>
-      <p>г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8</p>
+        </h1>
+        <p>+7(812)555-05-55</p>
+        <p>г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8</p>
       <ul class="user-adit">
-        <li class="login-link">Войти</li>
-      </ul>
-      <ul class="main-registration">
-        <li class="registration" href="#">Регистрация</li>
+        <li>
+          <a class="login-link" href="login.html">Войти</a>
+        </li>
+        <li><
+          <a class="registration" href="#">Регистрация</a>
+        </li>
+        <!-- <form class="registration-form" action="https://echo.htmlacademy.ru" method="post">
+           <p><label for="registration-fild">Ваше имя:</label></p>
+             <input type="text" id="registration-fild" name="registretion-name" value="" placeholder="Имя Фамилия">
+             <button class="registration-button" value="Отправить">Отправить</button>
+        </form> -->
       </ul>
       <nav cass="main-navigation">
         <ul class="site-navigation">
@@ -36,7 +53,7 @@
           <li><a href="#">Спецпредложения</a></li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Контакты</a></li>
-          </ul>
+        </ul>
       </nav>
     </header>
     <main class="main-container">
@@ -61,18 +78,33 @@
           <h2>контакты</h2>
           <p>Вы можете забрать товар сами,заехав в наш офис:</p>
           <ul class="main-map">
-          <li><a href="img/map.jpg">Карта</a></li>
+          <li><img src="img/map.jpg" width="300" height="158" alt=
+            "Офис кампании г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8">Карта</li>
           <li class="main-map-item"><a href="#">Заблудились?Напишите нам!</a></li>
-          </ul> 
+          </ul>
+          <div class="write">
+              <h3 class="visually-hidden">Написать нам</h3>
+              <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+                 <button type="button">Закрыть</button>
+                 <label for="write-info-name">Ваше имя:</label>
+                  <input type="text" name="name" id="write-info-name" value="" placeholder="Имя Фамилия">
+                 <label for="write-info-email">Ваш e-mail:</label>
+                 <input type="email" name="email" id="write-info-email" value="" placeholder=
+                 "email@examle.com">
+                 <label for="write-info-text">Текст письма:</label>
+                 <textarea name="text" id="write-info-text" placeholder="В свободной форме"></textarea>
+                 <button type="submit">Отправить</button>
+              </form>
+            </div> 
         </div>
       </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer-list">
-        <a class="main-footer-logo">
-          <img src="#" width="#" height="#" alt="Логотип Техномарта"></a>
-          <p class="footer-contacts">г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8
-             +7 (812) 555-05-55</p>
+          <a class="main-footer-logo" href="index.html">
+              <img src="img/invalid-name.png" width="109" height="19" alt="Логотип Техномарта"></a>
+          <p class="footer-contacts">г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8</p>
+            <p> +7 (812) 555-05-55</p>
         <ul class="main-futer-item">
           <li><a href="#">Компания</a></li>
           <li><a href="#">Новости</a></li>
@@ -88,13 +120,13 @@
           <li><a href="#">Спецпредложения</a></li>
         </ul>
       </div>
-      <p class="footer-license">2010-2017 Компания "Техномарт"
-      Все права защищены</p>
-      <ul>
-        <li><a class="social-button" href="img/vk-icon.svg">Вконтакте</a></li> 
-        <li><a class="social-button" href="img/fb-icon.svg">Фейсбук</a></li>
-        <li><a class="social-button" href="img/insta-icon.svg">Инстаграм</a></li>
-      </ul>
+       <p class="footer-license">2010-2017 Компания "Техномарт"
+        Все права защищены</p>
+       <ul>
+         <li><a class="social-button" href="#">Вконтакте</a></li> 
+         <li><a class="social-button" href="img/fb-icon.svg">Фейсбук</a></li>
+         <li><a class="social-button" href="img/insta-icon.svg">Инстаграм</a></li>
+       </ul>
         <p class="footer-connection">
           <p>Обратная связь:</p>
           <a href="https://htmlacademy.ru">mail@HTML Academy.ru</a>
@@ -102,8 +134,12 @@
         <p class="footer-copyright">
           <p>Разработано-</p>
           <a href="https://htmlacadtmy.ru">HTML Academy.ru</a>
-         </p>
-      
+        </p>
     </footer>
+
+       <div>
+         <img src="" width="" height="" alt="карта">
+         <button type="button">Закрыть</button>
+       </div>
   </body>
 </html>
