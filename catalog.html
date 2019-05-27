@@ -24,10 +24,12 @@
         <li class="login-link">Войти</li>
       </ul>
       <div class="registration">
-      <ul class="catalog-registration">
-        <li class="registration"> <a href="#">Равшан Джумшудович</a></li>
-        <li class="registration-button"></li><a href="#">Выход</a></li>
-      </ul>
+        <ul class="catalog-registration">
+          <li class="registration"> <a href="#">Равшан Джумшудович</a>
+          </li>
+          <li class="registration-button"><a href="#">Выход</a>
+          </li>
+       </ul>
     </div>
     <div>
       <a class="registration-order" href="#">Мои заказы</a>
@@ -56,21 +58,82 @@
      <div>
        <p class="catalog-filter">фильтр</p>
        <h3>цена</h3>
-     </div>  
-     <h3>производители</h3>
-     <h3>питание</h3>
-     <span class="catalog-show">
-       <p class="catalog-show-button">показать</p>
-     </span>
+     </div>
+     <form class="producers"  method="get" action="http://echo.htmlacadtmy.ru">
+        <fieldset> 
+          <legend>Производители:</legend>        
+          <ul>
+            <li class="producers-option">
+              <input class="bosh-item" type="checkbox" name="dosh" id="bosh-item-checkbox" checked>
+              <label for="bosh-item-ccheckbox">BOSH</label>
+            </li>
+            <li class="producers-option">
+                <input class="interskol-item" type="checkbox" name="interskol" id="interskol-item-checkbox">
+                <label for="interskol-item-checkbox">ИНТЕРСКОЛ</label>
+            </li>
+            <li class="producers-option">
+                <input class="makita-item" type="checkbox" name="dosh" id="makita-item-checkbox" checked>
+                <label for="makita-item-ccheckbox">MAKITA</label>
+            </li>
+            <li class="producers-option">
+                <input class="dewalt-item" type="checkbox" name="dosh" id="dewalt-item-checkbox">
+                <label for="dewalt-item-ccheckbox">DEWALT</label>
+            </li>
+            <li class="producers-option">
+                <input class="hitachi-item" type="checkbox" name="dosh" id="hitachi-item-checkbox">
+                <label for="hitachi-item-ccheckbox">HITACHI</label>
+              </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+           <legend>Питание:</legend>
+           <ul>
+              <li class="power-option">
+                 <input class="battery" type="radio" name="power" value="battery" id="power-battery" checked>
+                 <label for="power-battery">Аккумуляторные</label>
+              </li>
+              <li class="power-option">
+                  <input class="power-item" type="radio" name="power" value="electrical" id="power-electrical">
+                  <label for="power-electrical">Сетевые</label>
+              </li>
+           </ul>
+        </fieldset> 
+       <button type="submit" class="show-button">
+         Показать
+       </button>
+     </form>
    </section>
    <section class="main-perforators">
-     <p class="catalog-sorting">сортировка</p>
+     <h3>сортировка:</h3>
+     <form class="catalog-sorting" method="get" action="https://echo.htmlacademy.ru">
+        <!--<fieldset>
+          <legend>По цене</legend>
+        </fieldset>-->
+    <ul>
+      <li>
+        <fieldset>
+          <legend>По типу</legend>
+        </fieldset>
+      </li>
+      <li>
+        <fieldset>
+           <legend>По функционалу</legend>
+        </fieldset>
+      </li>
+     </form>
+       <!--<span class="sorting-price">
+         <p>По цене</p>
+       </span>
       <span class="sorting-panel">
        <p>по типу</p>
       </span>
       <span class="sorting-functional">
         <p>по функционалу</p>
-      </span>
+      </span>-->
+      <li>
+      <fieldset>
+          <legend>По цене</legend>
+
       <ul class="perforators">
         <li>
           <div>
@@ -178,6 +241,8 @@
           <p>15500р.</p>
         </li>
       </ul>
+      </fieldset>
+      </li>
     <span class="catalog-next">
       <p class="next-button">Следующая</p>
     </span>
@@ -226,5 +291,11 @@
               <a href="https://htmlacadtmy.ru">HTML Academy.ru</a>
              </p>
       </footer>
+      <div>
+        <b>Товар добавлен в корзину</b>
+        <a href="">Оформить заказ</a>
+        <button type="button">Продолжить покупки</button>
+        <button type="button">Закрыть</button>
+      </div>
   </body>
 </html> 
